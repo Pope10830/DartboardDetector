@@ -24,11 +24,16 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         <a href="https://pope10830.github.io/" class="btn">Home</a>
+      {% else %}
+        <h1 class="project-name">Oliver Pope</h1>
+        <h3 class="project-tagline">Email: pope10830@gmail.com</h3>
+        <h3 class="project-tagline">Phone: 07806821131</h3>
+        <h3 class="project-tagline">DOB: 07/08/2000</h3>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
