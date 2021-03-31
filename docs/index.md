@@ -1,4 +1,4 @@
-Dartboard detector finds and highlights dartboards in an image using OpenCV.
+Dartboard Detector finds and highlights dartboards in an image using C++ and OpenCV.
 
 # Report
 ![Report Page 1](https://i.imgur.com/emiwEhp.png)
